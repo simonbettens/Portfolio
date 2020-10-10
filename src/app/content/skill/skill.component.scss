@@ -1,0 +1,13 @@
+$gold :#fddb3a;
+$black : #41444b;
+$grey : #52575d;
+.skill-card{
+    clear: left;
+    border: $grey solid 1px;
+    width: 15rem;
+    max-width: 15rem;
+    margin: 3rem;
+    .subskill-list{
+        text-align: left;
+    }
+}

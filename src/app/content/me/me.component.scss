@@ -1,0 +1,23 @@
+$grey: #52575d;
+$gold :#fddb3a;
+.me-content {
+  display: flex;
+  justify-content: center;
+
+  #me-image {
+    border-radius: 50%;
+    border: dotted $gold 5px;
+    max-width: 30%;
+    height: auto;
+  }
+
+  #me-float-right {
+    text-align: left;
+    border-left: double 5px $grey;
+    margin: 1rem;
+    padding: 1rem;
+    #me-text{
+        transform: translateY(40%);
+    }
+  }
+}
