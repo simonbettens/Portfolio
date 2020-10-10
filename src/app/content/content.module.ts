@@ -5,11 +5,12 @@ import { ProjectsOverviewComponent } from './projects-overview/projects-overview
 import { MeComponent } from './me/me.component';
 import { SkillsListComponent } from './skills-list/skills-list.component';
 import { SkillComponent } from './skill/skill.component';
+import { EducationComponent } from './education/education.component';
 
 
 
 @NgModule({
-  declarations: [ProjectComponent,ProjectsOverviewComponent,MeComponent, SkillsListComponent, SkillComponent],
+  declarations: [ProjectComponent,ProjectsOverviewComponent,MeComponent, SkillsListComponent, SkillComponent, EducationComponent],
   imports: [
     CommonModule
   ],  
