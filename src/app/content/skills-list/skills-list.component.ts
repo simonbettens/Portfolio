@@ -15,7 +15,7 @@ export class SkillsListComponent implements OnInit {
 
   ngOnInit(): void {
     //<span class="iconify" data-icon="cib:java" data-inline="false"></span>
-    var java  = new Skill("Java",["JavaFX","Junit","Design Patterns"],"cib:java");
+    var java  = new Skill("Java",["JavaFX","Junit","Maven"],"cib:java");
     //<span class="iconify" data-icon="ri:angularjs-line" data-inline="false"></span>
     var angular = new Skill("Angular",["Cypress","Material","REST"],"ri:angularjs-line");
     //<span class="iconify" data-icon="cib:dot-net" data-inline="false"></span>
@@ -46,16 +46,11 @@ export class SkillsListComponent implements OnInit {
     this.draw();
   }
   draw(){
-    console.log("draw")
-    console.log(this.startIndex)
     this.visibleSkills = [];
     var temp = [];
     temp.push( this.skills[this.startIndex]);
-    var endIndex = (this.startIndex+2)%this.maxSkills;
-    
+    var endIndex = (this.startIndex+2)%this.maxSkills; 
     var oneToEndIndex = (this.startIndex+1)%this.maxSkills;
-    console.log(oneToEndIndex)
-    console.log(endIndex);
     temp.push(this.skills[oneToEndIndex])
     temp.push( this.skills[endIndex]);
     this.visibleSkills = temp

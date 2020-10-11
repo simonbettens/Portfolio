@@ -18,6 +18,8 @@ $grey : #52575d;
         text-align: left;
         clear: both;
         padding: 1rem 3rem 1rem 3rem;
+        box-shadow: 5px 3px $grey;
+
         .edu-row{
             display: flex;
             flex-direction: row;

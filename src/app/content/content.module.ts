@@ -6,15 +6,18 @@ import { MeComponent } from './me/me.component';
 import { SkillsListComponent } from './skills-list/skills-list.component';
 import { SkillComponent } from './skill/skill.component';
 import { EducationComponent } from './education/education.component';
+import { LanguagesComponent } from './languages/languages.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
 @NgModule({
-  declarations: [ProjectComponent,ProjectsOverviewComponent,MeComponent, SkillsListComponent, SkillComponent, EducationComponent],
+  declarations: [ProjectComponent,ProjectsOverviewComponent,MeComponent, SkillsListComponent, SkillComponent, 
+    EducationComponent, LanguagesComponent, ContactComponent, ],
   imports: [
     CommonModule
   ],  
-  exports : [MeComponent,ProjectsOverviewComponent]
+  exports : [MeComponent,ProjectsOverviewComponent,ContactComponent]
 
 })
 export class ContentModule { }

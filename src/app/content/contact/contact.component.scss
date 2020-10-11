@@ -1,0 +1,26 @@
+$gold :#fddb3a;
+$black : #41444b;
+$grey : #52575d;
+#contact{
+    color: $gold;
+    background: $black;
+    margin: 2rem 10rem 2rem 10rem;
+    padding: 1rem;
+    a{
+        color: $gold;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    .con-social{
+        display: flex;
+        flex-direction: row;
+        color: $gold;
+        align-content: center;
+        justify-content: center;
+        .icon{
+            margin: 1rem;
+
+        }
+    }
+}
