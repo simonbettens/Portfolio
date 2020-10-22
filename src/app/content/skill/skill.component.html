@@ -1,0 +1,12 @@
+<div class="skill-card">
+    <h3> {{ item.skillName }} </h3>
+    <h4 class="icon"><span class="iconify" [attr.data-icon]="item.icon" data-inline="false"></span></h4>
+    <div class="subskill-list">
+        <ol>
+            <div *ngFor="let subSkill of item.subSkill">
+                <li> {{ subSkill }}</li>
+            </div>
+                <li> ... </li>
+        </ol>
+    </div>
+</div>
