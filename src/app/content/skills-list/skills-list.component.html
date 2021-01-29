@@ -1,11 +1,11 @@
 <div id="skill-list-box">
     <h2>My Skills</h2>
     <div id="skill-list">
-        <div (click)="left()"><span class="iconify size"  data-icon="dashicons:arrow-left-alt2" data-inline="false"></span></div>
-        <div *ngFor="let item of visibleSkills">
-            <app-skill [item]=item ></app-skill>
+        <div class="scrolling-wrapper-flexbox">
+            <div *ngFor="let item of visibleSkills" class="card">
+                <app-skill [item]=item ></app-skill>
+            </div>
         </div>
-        <div (click)="right()"><span class="iconify size"  data-icon="dashicons:arrow-right-alt2" data-inline="false"></span></div>
     </div>
 </div>
 
