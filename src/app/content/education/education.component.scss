@@ -3,7 +3,8 @@ $black : #41444b;
 $grey : #52575d;
 #edu-colomn{
     border: $black 1px solid;
-    margin: 2rem 10rem 2rem 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -11,7 +12,6 @@ $grey : #52575d;
         clear: left;
         border: $grey solid 1px;
         width: auto;
-
         margin: 1rem;
         background: $black;
         color:$gold;

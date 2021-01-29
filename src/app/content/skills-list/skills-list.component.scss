@@ -3,7 +3,6 @@ $black : #41444b;
 $grey : #52575d;
 #skill-list-box{
     border: $black 1px solid;
-    margin: 2rem 10rem 2rem 10rem;
     padding: 1rem;
     
     #skill-list{
@@ -17,5 +16,30 @@ $grey : #52575d;
     }
     .size:hover{
         color:$gold;
+    }
+    .scrolling-wrapper-flexbox {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        /* Works on Firefox */
+        scrollbar-width: thin;
+        scrollbar-color: $gold $black;
+        .card {
+          flex: 0 0 auto;
+          margin-right: 3px;
+        }
+         /* Works on Chrome, Edge, and Safari */
+        &::-webkit-scrollbar {
+            width: 15px;
+        }
+        &::-webkit-scrollbar-track {
+            background: $black;
+            border-radius: 20px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $gold;
+            border-radius: 20px;
+            border: 3px solid $black;
+        }
     }
 }
