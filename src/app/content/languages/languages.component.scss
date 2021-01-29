@@ -1,17 +1,18 @@
-$gold: #fddb3a;
-$black: #41444b;
-$grey: #52575d;
+@import "src/scss-partials/variables";
+@import "src/scss-partials/mixins";
+
 #lang {
   border: $black 1px solid;
-  margin: 2rem 10rem 2rem 10rem;
   padding: 1rem;
   #langs-row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    @include from-desktop{
+      flex-direction: row;
+    }
     align-content: center;
     justify-content: center;
     .langs-col {
-      margin: 2rem 10rem 2rem 10rem;
       padding: 1rem;
       display: flex;
       flex-direction: column;
