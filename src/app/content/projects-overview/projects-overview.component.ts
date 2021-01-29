@@ -15,8 +15,9 @@ export class ProjectsOverviewComponent implements OnInit {
     ["ri:angularjs-line","cib:dot-net","carbon:sql"],["../../../assets/images/reminderapp.png"]);
     var itLab = new Project("ITlab","A web and java application for HoGent",["cib:java","cib:dot-net","carbon:sql"],
     ["../../../assets/images/itlabDotNet.png","../../../assets/images/itlabJava.png"]);
-    
-    this.projects = [reminderApp,itLab];
+    var damienExperience = new Project("Damien Experience","A web and android application for the charity Damien",
+    ["ri:angularjs-line","cib:dot-net","bx:bxl-android"],["../../../assets/images/damienexperienceAngular.png"]);
+    this.projects = [reminderApp,itLab,damienExperience];
   }
 
 }
