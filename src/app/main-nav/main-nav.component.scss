@@ -1,12 +1,11 @@
-$gold: #fddb3a;
-$black: #41444b;
-$grey: #52575d;
+@import "src/scss-partials/variables";
+@import "src/scss-partials/mixins";
 .nav {
   overflow: hidden;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%;
- z-index: 4;
+  z-index: 4;
   .nav-bar {
     display: flex;
     border: 4px solid $gold;
@@ -34,6 +33,7 @@ $grey: #52575d;
   }
 }
 .content {
-  margin: auto;
+  width: 80%;
+  margin-left: 10%;
   text-align: center;
 }

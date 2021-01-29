@@ -1,23 +1,56 @@
 $grey: #52575d;
 $gold :#fddb3a;
+@import "src/scss-partials/mixins";
 .me-content {
+  margin: 2rem 10rem 2rem 10rem;
+  padding: 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  @include from-desktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
   #me-image {
     border-radius: 50%;
     border: dotted $gold 5px;
-    max-width: 30%;
+    max-width: 50%;
+    margin: 0 auto;
+    @include desktop{
+      max-width: 45%;
+    }
+    @include from-tablet{
+      max-width: 35%;
+    }
     height: auto;
   }
 
   #me-float-right {
     text-align: left;
-    border-left: double 5px $grey;
+    @include desktop{
+      border: double 5px $grey;
+    }
+    @include from-tablet{
+      border-left: double 5px $grey;
+      #me-text{
+        transform: translateY(0%);
+      }
+    }
+    @include from-desktop{
+      border-left: double 5px $grey;
+      #me-text{
+        transform: translateY(40%);
+      }
+    }
+    @include from-desktop-lg{
+      #me-text{
+        transform: translateY(0%);
+      }
+    }
     margin: 1rem;
     padding: 1rem;
-    #me-text{
-        transform: translateY(40%);
-    }
+    
   }
 }
