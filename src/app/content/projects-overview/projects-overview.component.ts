@@ -14,7 +14,7 @@ export class ProjectsOverviewComponent implements OnInit {
     var reminderApp = new Project("Reminder app","A personal angular webapp with a .NET core rest api. Made to plan tasks",
     ["ri:angularjs-line","cib:dot-net","carbon:sql"],["../../../assets/images/reminderapp.png"]);
     var itLab = new Project("ITlab","A web and java application for HoGent",["cib:java","cib:dot-net","carbon:sql"],
-    ["../../../assets/images/itlabDotNet.PNG"]);
+    ["../../../assets/images/itlabDotNet.png","../../../assets/images/itlabJava.png"]);
     
     this.projects = [reminderApp,itLab];
   }
