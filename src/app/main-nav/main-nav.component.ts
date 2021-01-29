@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import { WelcomedialogComponent } from '../content/welcomedialog/welcomedialog.component';
+
 
 @Component({
   selector: 'app-main-nav',
@@ -8,9 +11,16 @@ import { Component, OnInit } from '@angular/core';
 export class MainNavComponent implements OnInit {
   sideNavVisible : boolean = true;
   
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+
+  }
+  ngAfterViewInit():void{
+    this.openDialog()
+  }
+  openDialog() {
+    const dialogRef = this.dialog.open(WelcomedialogComponent);
   }
   closeNav(){
     document.getElementById("mySidebar").style.width = "0";
