@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import { WelcomedialogComponent } from '../content/welcomedialog/welcomedialog.component';
-
-
 @Component({
   selector: 'app-main-nav',
   templateUrl: './main-nav.component.html',
